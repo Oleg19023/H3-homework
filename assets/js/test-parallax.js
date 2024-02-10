@@ -510,7 +510,7 @@ document.getElementById('themeToggle').addEventListener('click', function() {
                                     }
                 }
             });
-        }, 390);
+        }, 300);
     }
     isParticlesEnabled = !isParticlesEnabled;
 });
