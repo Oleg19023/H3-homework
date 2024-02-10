@@ -59,7 +59,7 @@ const app = Vue.createApp({
       }
       // Зодиак
       const zodiacSigns = ["🐐 Козерог", "⚱💧Водолей", "🐟 Рыбы", "🐏 Овен", "🐂 Телец", "👥 Близнецы", "🦞 Рак", "🦁 Лев", "👧 Дева", "⚖ Весы", "🦂 Скорпион", "🏹 Стрелец"];
-      const zodiacSign = zodiacSigns[Math.floor(((birthDate.getMonth() + 1) * 100 + birthDate.getDate() - 120) / 100) % 12];
+      const zodiacSign = zodiacSigns[Math.floor(((birthDate.getMonth() + 2) * 100 + birthDate.getDate() - 120) / 100) % 12];
       // Восточный календарь
       const chineseZodiac = ["🐀 Крыса", "🐂 Бык", "🐅 Тигр", "🐇 Кролик", "🐉 Дракон", "🐍 Змея", "🐎 Лошадь", "🐑 Овца", "🐒 Обезьяна", "🐓 Петух", "🐕 Собака", "🐖 Свинья"];
       const chineseSign = chineseZodiac[(birthDate.getFullYear() - 4) % 12];
