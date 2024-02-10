@@ -15,6 +15,10 @@ body, .navbar, header, .nav-link, .navbar-brand i {
     transition: all 1s ease;
 }
 
+.navbar-collapse {
+    transition: all 0.7s ease;
+}
+
 header {
     background-color: #f7f7f7;
     border-bottom: 1px solid rgba(0, 0, 0, 0.180);
@@ -42,7 +46,7 @@ header {
     margin-left: 10px;
     margin-bottom: 10px;
     width: 40px;
-    height: 40px;
+    height: 38px;
     padding: 0px;
 }
 
