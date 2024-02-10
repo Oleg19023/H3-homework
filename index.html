@@ -9,11 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.2/tsparticles.bundle.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
 </head>
 <body>
+  <div id="tsparticles"></div>
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="white">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><i class="fa-solid fa-house"></i></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +24,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">More</a>
+                <a class="nav-link" aria-current="page" href="https://github.com/Oleg19023">GitHub</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Examples</a>
@@ -33,7 +35,8 @@
             </ul>
             <button id="themeToggle" class="btn btn-outline-secondary">
               <i id="themeIcon" class="fas fa-moon"></i>
-          </button>
+        </button>
+        <input type="color" id="colorPicker" value="#FFFFFF">
           </div>
         </div>
     </nav>
@@ -46,7 +49,6 @@
 				<label for="tinNumber" class="form-label">ИНН:</label>
 				<input type="text" class="form-control" v-model="tin" placeholder="Введите ИНН">
 			</div>
-	  
 			<div class="mt-4">
 				<p v-if="result">
 					<b>ИНН:</b> <span :class="{ 'text-success': isTinValid, 'text-danger': !isTinValid }">{{ result.tin }}</span><br>
@@ -64,5 +66,6 @@
 </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/test-parallax.js"></script>
 </body>
 </html>
