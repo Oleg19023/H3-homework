@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/css/style.css">
-	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
 </head>
 <body>
 <header>
@@ -47,7 +47,6 @@
 				<input type="text" class="form-control" v-model="tin" placeholder="Введите ИНН">
 			</div>
 	  
-			<button type="button" class="btn btn-primary" @click="checkTIN">Проверить</button>
 			<div class="mt-4">
 				<p v-if="result">
 					<b>ИНН:</b> <span :class="{ 'text-success': isTinValid, 'text-danger': !isTinValid }">{{ result.tin }}</span><br>
