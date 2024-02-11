@@ -12,7 +12,7 @@ img {
 }
 
 body, .navbar, header, .nav-link, .navbar-brand i {
-    transition: all 1s ease;
+    transition: all 0.8s ease;
 }
 
 .navbar-collapse {
